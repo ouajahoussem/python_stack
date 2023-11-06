@@ -37,10 +37,10 @@ class BankAccount:
         for account in cls.accounts:
             account.display_account_info()
 
-sofian= BankAccount(.05,2000)
-ali= BankAccount(.02, 5000)
+firstAccount= BankAccount(.05,2000)
+secondAccount= BankAccount(.02, 5000)
 
-sofian.deposit(50).deposit(100).deposit(20).withdraw(200).yield_interest().display_account_info()
-ali.deposit(100).deposit(300).withdraw(20).withdraw(200).withdraw(600).withdraw(50).yield_interest().display_account_info()
+firstAccount.deposit(50).deposit(100).deposit(20).withdraw(200).yield_interest().display_account_info()
+secondAccount.deposit(100).deposit(300).withdraw(20).withdraw(200).withdraw(600).withdraw(50).yield_interest().display_account_info()
 
 BankAccount.print_all_accounts()
