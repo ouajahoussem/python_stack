@@ -1,0 +1,29 @@
+select * from dojos;
+
+insert into dojos (name) values ("tunis"), ("london"), ("tokyo");
+
+SET SQL_SAFE_UPDATES = 0;
+delete from dojos;
+
+insert into ninjas (first_name, last_name, age, dojo_id)
+values ("houssem", "ouaja", 28,4), ("mohamedali", "kdous", 30,4),("aness", "bdiri", 32,4);
+
+select * from ninjas;
+
+insert into ninjas (first_name, last_name, age, dojo_id)
+values ("jhon", "doe", 28,5), ("jane", "doe", 30,5),("kate", "doe", 32,5);
+
+insert into ninjas (first_name, last_name, age, dojo_id)
+values ("jet", "lee", 28,6), ("jackie", "chan", 30,6),("donnie", "yen", 32,6);
+
+select * from ninjas  
+join dojos on dojos.id = ninjas.dojo_id
+where dojo_id =4 ;
+
+select * from ninjas  
+join dojos on dojos.id = ninjas.dojo_id
+where dojo_id =6;
+
+select * from ninjas  
+join dojos on dojos.id = ninjas.dojo_id
+where ninjas.id =9;
