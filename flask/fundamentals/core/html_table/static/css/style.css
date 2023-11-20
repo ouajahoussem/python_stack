@@ -1,0 +1,18 @@
+*{
+    margin: 10px auto;
+}
+th{
+    background-color: #484848;
+    color: darkgoldenrod;
+    width: 200px;
+}
+tr{
+    border-bottom: 1px solid gray;
+    height: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+table{
+    border-collapse: collapse;
+}
